@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D39C5E6238877F300A39CCC /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				1D725B7023884AD30035DB6B /* AppDelegate.swift */,
+				1D725B7C23884ADE0035DB6B /* Assets.xcassets */,
+				1D725B7223884AD30035DB6B /* SceneDelegate.swift */,
+				1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1D39C5E7238877F900A39CCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D725B7623884AD30035DB6B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D39C5E82388780500A39CCC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D725B7423884AD30035DB6B /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1D39C5E92388799000A39CCC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		1D725B6423884AD30035DB6B = {
 			isa = PBXGroup;
 			children = (
@@ -67,12 +101,10 @@
 		1D725B6F23884AD30035DB6B /* pursuitstagram */ = {
 			isa = PBXGroup;
 			children = (
-				1D725B7023884AD30035DB6B /* AppDelegate.swift */,
-				1D725B7223884AD30035DB6B /* SceneDelegate.swift */,
-				1D725B7423884AD30035DB6B /* ViewController.swift */,
-				1D725B7623884AD30035DB6B /* Main.storyboard */,
-				1D725B7C23884ADE0035DB6B /* Assets.xcassets */,
-				1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */,
+				1D39C5E82388780500A39CCC /* View Controllers */,
+				1D39C5E7238877F900A39CCC /* Views */,
+				1D39C5E6238877F300A39CCC /* Supporting */,
+				1D39C5E92388799000A39CCC /* Utilities */,
 				1D725B8123884ADE0035DB6B /* Info.plist */,
 				1D725B872388545D0035DB6B /* GoogleService-Info.plist */,
 				1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */,
@@ -94,7 +126,6 @@
 				3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */,
 				0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
