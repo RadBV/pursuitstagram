@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D725B7123884AD30035DB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7023884AD30035DB6B /* AppDelegate.swift */; };
+		1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7223884AD30035DB6B /* SceneDelegate.swift */; };
+		1D725B7523884AD30035DB6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7423884AD30035DB6B /* ViewController.swift */; };
+		1D725B7823884AD30035DB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7623884AD30035DB6B /* Main.storyboard */; };
+		1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */; };
+		1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7C23884ADE0035DB6B /* Assets.xcassets */; };
+		1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */; };
+		1D725B882388545D0035DB6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B872388545D0035DB6B /* GoogleService-Info.plist */; };
+		3150E6435D957E7C986F66E8 /* Pods_pursuitstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.release.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.release.xcconfig"; sourceTree = "<group>"; };
+		1D725B6D23884AD30035DB6B /* pursuitstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pursuitstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D725B7023884AD30035DB6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D725B7223884AD30035DB6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D725B7423884AD30035DB6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D725B7723884AD30035DB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D725B7A23884AD30035DB6B /* pursuitstagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pursuitstagram.xcdatamodel; sourceTree = "<group>"; };
+		1D725B7C23884ADE0035DB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D725B7F23884ADE0035DB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D725B8123884ADE0035DB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D725B872388545D0035DB6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.debug.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pursuitstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D725B6A23884AD30035DB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3150E6435D957E7C986F66E8 /* Pods_pursuitstagram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D725B6423884AD30035DB6B = {
+			isa = PBXGroup;
+			children = (
+				1D725B6F23884AD30035DB6B /* pursuitstagram */,
+				1D725B6E23884AD30035DB6B /* Products */,
+				6F14CACBD1A106E720861C56 /* Pods */,
+				6BE6180631871A5AD5C3D536 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D725B6E23884AD30035DB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D725B6D23884AD30035DB6B /* pursuitstagram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D725B6F23884AD30035DB6B /* pursuitstagram */ = {
+			isa = PBXGroup;
+			children = (
+				1D725B7023884AD30035DB6B /* AppDelegate.swift */,
+				1D725B7223884AD30035DB6B /* SceneDelegate.swift */,
+				1D725B7423884AD30035DB6B /* ViewController.swift */,
+				1D725B7623884AD30035DB6B /* Main.storyboard */,
+				1D725B7C23884ADE0035DB6B /* Assets.xcassets */,
+				1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */,
+				1D725B8123884ADE0035DB6B /* Info.plist */,
+				1D725B872388545D0035DB6B /* GoogleService-Info.plist */,
+				1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */,
+			);
+			path = pursuitstagram;
+			sourceTree = "<group>";
+		};
+		6BE6180631871A5AD5C3D536 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F14CACBD1A106E720861C56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */,
+				0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D725B6C23884AD30035DB6B /* pursuitstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D725B8423884ADE0035DB6B /* Build configuration list for PBXNativeTarget "pursuitstagram" */;
+			buildPhases = (
+				904C55AADF5F73E209403008 /* [CP] Check Pods Manifest.lock */,
+				1D725B6923884AD30035DB6B /* Sources */,
+				1D725B6A23884AD30035DB6B /* Frameworks */,
+				1D725B6B23884AD30035DB6B /* Resources */,
+				EE81492D60A5C548972CAC24 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pursuitstagram;
+			productName = pursuitstagram;
+			productReference = 1D725B6D23884AD30035DB6B /* pursuitstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D725B6523884AD30035DB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Radharani Ribas-Valongo";
+				TargetAttributes = {
+					1D725B6C23884AD30035DB6B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 1D725B6823884AD30035DB6B /* Build configuration list for PBXProject "pursuitstagram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D725B6423884AD30035DB6B;
+			productRefGroup = 1D725B6E23884AD30035DB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D725B6C23884AD30035DB6B /* pursuitstagram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D725B6B23884AD30035DB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */,
+				1D725B882388545D0035DB6B /* GoogleService-Info.plist in Resources */,
+				1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */,
+				1D725B7823884AD30035DB6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		904C55AADF5F73E209403008 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pursuitstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE81492D60A5C548972CAC24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D725B6923884AD30035DB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D725B7523884AD30035DB6B /* ViewController.swift in Sources */,
+				1D725B7123884AD30035DB6B /* AppDelegate.swift in Sources */,
+				1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */,
+				1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D725B7623884AD30035DB6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D725B7723884AD30035DB6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D725B7F23884ADE0035DB6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D725B8223884ADE0035DB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D725B8323884ADE0035DB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D725B8523884ADE0035DB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = pursuitstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rad.pursuitstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D725B8623884ADE0035DB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = pursuitstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rad.pursuitstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D725B6823884AD30035DB6B /* Build configuration list for PBXProject "pursuitstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D725B8223884ADE0035DB6B /* Debug */,
+				1D725B8323884ADE0035DB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D725B8423884ADE0035DB6B /* Build configuration list for PBXNativeTarget "pursuitstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D725B8523884ADE0035DB6B /* Debug */,
+				1D725B8623884ADE0035DB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D725B7A23884AD30035DB6B /* pursuitstagram.xcdatamodel */,
+			);
+			currentVersion = 1D725B7A23884AD30035DB6B /* pursuitstagram.xcdatamodel */;
+			path = pursuitstagram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D725B6523884AD30035DB6B /* Project object */;
+}
