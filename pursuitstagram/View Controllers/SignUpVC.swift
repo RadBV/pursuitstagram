@@ -1,0 +1,24 @@
+//
+//  SignUpVC.swift
+//  pursuitstagram
+//
+//  Created by Radharani Ribas-Valongo on 11/25/19.
+//  Copyright © 2019 Radharani Ribas-Valongo. All rights reserved.
+//
+
+import UIKit
+
+class SignUpVC: UIViewController {
+
+    //MARK: - IBOutlets
+    
+    //MARK: - Properties
+    
+    //MARK: - View did load
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+    //MARK: - Functions
+}

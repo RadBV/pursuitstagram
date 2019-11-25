@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D0238C8C9300167D4D /* SignUpVC.swift */; };
+		1D1078D3238C8CA800167D4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D2238C8CA800167D4D /* HomeVC.swift */; };
 		1D725B7123884AD30035DB6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7023884AD30035DB6B /* AppDelegate.swift */; };
 		1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7223884AD30035DB6B /* SceneDelegate.swift */; };
-		1D725B7523884AD30035DB6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7423884AD30035DB6B /* ViewController.swift */; };
+		1D725B7523884AD30035DB6B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7423884AD30035DB6B /* LoginVC.swift */; };
 		1D725B7823884AD30035DB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7623884AD30035DB6B /* Main.storyboard */; };
 		1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */; };
 		1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7C23884ADE0035DB6B /* Assets.xcassets */; };
@@ -20,10 +22,12 @@
 
 /* Begin PBXFileReference section */
 		0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.release.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.release.xcconfig"; sourceTree = "<group>"; };
+		1D1078D0238C8C9300167D4D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		1D1078D2238C8CA800167D4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1D725B6D23884AD30035DB6B /* pursuitstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pursuitstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D725B7023884AD30035DB6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D725B7223884AD30035DB6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D725B7423884AD30035DB6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D725B7423884AD30035DB6B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1D725B7723884AD30035DB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D725B7A23884AD30035DB6B /* pursuitstagram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pursuitstagram.xcdatamodel; sourceTree = "<group>"; };
 		1D725B7C23884ADE0035DB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +72,9 @@
 		1D39C5E82388780500A39CCC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D725B7423884AD30035DB6B /* ViewController.swift */,
+				1D725B7423884AD30035DB6B /* LoginVC.swift */,
+				1D1078D0238C8C9300167D4D /* SignUpVC.swift */,
+				1D1078D2238C8CA800167D4D /* HomeVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -245,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D725B7523884AD30035DB6B /* ViewController.swift in Sources */,
+				1D725B7523884AD30035DB6B /* LoginVC.swift in Sources */,
 				1D725B7123884AD30035DB6B /* AppDelegate.swift in Sources */,
 				1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */,
+				1D1078D3238C8CA800167D4D /* HomeVC.swift in Sources */,
+				1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */,
 				1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
