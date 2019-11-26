@@ -28,10 +28,4 @@ class SignUpVC: UIViewController {
     @IBAction func signUpPressed(_ sender: UIButton) {
        
     }
-    
-    static func isPasswordValid(_ password : String) -> Bool {
-        
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[0-9]).{5,}")
-        return passwordTest.evaluate(with: password)
-    }
 }
