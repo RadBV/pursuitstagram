@@ -69,14 +69,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1D39C5E82388780500A39CCC /* View Controllers */ = {
+		1D39C5E82388780500A39CCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				1D725B7423884AD30035DB6B /* LoginVC.swift */,
 				1D1078D0238C8C9300167D4D /* SignUpVC.swift */,
 				1D1078D2238C8CA800167D4D /* HomeVC.swift */,
 			);
-			path = "View Controllers";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		1D39C5E92388799000A39CCC /* Utilities */ = {
@@ -107,7 +107,7 @@
 		1D725B6F23884AD30035DB6B /* pursuitstagram */ = {
 			isa = PBXGroup;
 			children = (
-				1D39C5E82388780500A39CCC /* View Controllers */,
+				1D39C5E82388780500A39CCC /* Controllers */,
 				1D39C5E7238877F900A39CCC /* Views */,
 				1D39C5E6238877F300A39CCC /* Supporting */,
 				1D39C5E92388799000A39CCC /* Utilities */,

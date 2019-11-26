@@ -12,6 +12,8 @@ import FirebaseAuth
 class LoginVC: UIViewController {
 
     //MARK: - IBOutlets
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
     
     //MARK: - Properties
     
@@ -22,6 +24,13 @@ class LoginVC: UIViewController {
     }
     
     //MARK: - Functions
-
+    @IBAction func loginPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
