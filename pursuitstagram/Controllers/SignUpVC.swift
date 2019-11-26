@@ -26,7 +26,7 @@ class SignUpVC: UIViewController {
     
     //MARK: - Functions
     @IBAction func signUpPressed(_ sender: UIButton) {
-        
+       
     }
     
     static func isPasswordValid(_ password : String) -> Bool {
