@@ -76,6 +76,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="SoH-Ze-eCq" id="EDD-Pl-DGT"/>
                         <outlet property="errorLabel" destination="bNB-Eu-189" id="cCE-vJ-69f"/>
+                        <outlet property="loginButton" destination="VEL-5G-Yvu" id="wVE-oP-aY2"/>
                         <outlet property="passwordTextfield" destination="Ctv-yX-zTP" id="Ste-fe-To1"/>
                     </connections>
                 </viewController>
