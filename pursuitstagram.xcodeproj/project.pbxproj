@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0171CF238F14D7003386BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0171CE238F14D7003386BA /* GoogleService-Info.plist */; };
 		1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D0238C8C9300167D4D /* SignUpVC.swift */; };
 		1D1078D3238C8CA800167D4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D2238C8CA800167D4D /* HomeVC.swift */; };
 		1D1078D5238D5A7C00167D4D /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D4238D5A7C00167D4D /* FirebaseAuthService.swift */; };
@@ -23,13 +24,13 @@
 		1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */; };
 		1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7C23884ADE0035DB6B /* Assets.xcassets */; };
 		1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */; };
-		1D725B882388545D0035DB6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B872388545D0035DB6B /* GoogleService-Info.plist */; };
 		1DCE5090238D8D9B0053A04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE508F238D8D9B0053A04A /* Constants.swift */; };
 		3150E6435D957E7C986F66E8 /* Pods_pursuitstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.release.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.release.xcconfig"; sourceTree = "<group>"; };
+		1D0171CE238F14D7003386BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		1D1078D0238C8C9300167D4D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		1D1078D2238C8CA800167D4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1D1078D4238D5A7C00167D4D /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		1D725B7C23884ADE0035DB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D725B7F23884ADE0035DB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D725B8123884ADE0035DB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D725B872388545D0035DB6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1DCE508F238D8D9B0053A04A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.debug.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pursuitstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +160,7 @@
 				1D39C5E6238877F300A39CCC /* Supporting */,
 				1D39C5E92388799000A39CCC /* Utilities */,
 				1D725B8123884ADE0035DB6B /* Info.plist */,
-				1D725B872388545D0035DB6B /* GoogleService-Info.plist */,
+				1D0171CE238F14D7003386BA /* GoogleService-Info.plist */,
 				1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */,
 			);
 			path = pursuitstagram;
@@ -244,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */,
-				1D725B882388545D0035DB6B /* GoogleService-Info.plist in Resources */,
+				1D0171CF238F14D7003386BA /* GoogleService-Info.plist in Resources */,
 				1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */,
 				1D725B7823884AD30035DB6B /* Main.storyboard in Resources */,
 			);
