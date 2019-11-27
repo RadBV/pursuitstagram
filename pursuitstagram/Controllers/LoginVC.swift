@@ -14,12 +14,14 @@ class LoginVC: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     //MARK: - Properties
     
     //MARK: - View did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        errorLabel.alpha = 0
         // Do any additional setup after loading the view.
     }
     

@@ -24,6 +24,7 @@
 		1D725B7D23884ADE0035DB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7C23884ADE0035DB6B /* Assets.xcassets */; };
 		1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */; };
 		1D725B882388545D0035DB6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B872388545D0035DB6B /* GoogleService-Info.plist */; };
+		1DCE5090238D8D9B0053A04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE508F238D8D9B0053A04A /* Constants.swift */; };
 		3150E6435D957E7C986F66E8 /* Pods_pursuitstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1D725B7F23884ADE0035DB6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D725B8123884ADE0035DB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D725B872388545D0035DB6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DCE508F238D8D9B0053A04A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.debug.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pursuitstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				1D1078DC238D649100167D4D /* AppUsers.swift */,
 				1D1078DE238D7E5F00167D4D /* Post.swift */,
 				1D1078E0238D7E6700167D4D /* Comment.swift */,
+				1DCE508F238D8D9B0053A04A /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				1D1078E1238D7E6700167D4D /* Comment.swift in Sources */,
 				1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */,
 				1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */,
+				1DCE5090238D8D9B0053A04A /* Constants.swift in Sources */,
 				1D1078DD238D649100167D4D /* AppUsers.swift in Sources */,
 				1D1078D5238D5A7C00167D4D /* FirebaseAuthService.swift in Sources */,
 			);

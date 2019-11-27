@@ -8,17 +8,11 @@
 
 import Foundation
 import FirebaseFirestore
-
-enum FireStoreCollections: String {
-    case users
-    case pictures
-    case comments
-}
+import FirebaseAuth
 
 enum SortingCriteria: String {
     case dateCreated
 }
-
 
 class FirestoreService {
     static let manager = FirestoreService()
@@ -29,7 +23,7 @@ class FirestoreService {
     func createAppUser(user: AppUser, completion: @escaping (Result<(), Error>) -> ()) {
         var fields = user.fieldsDict
         fields["dateCreated"] = Date()
-        db.collection(FireStoreCollections.users.rawValue).document(user.uid).setData(fields) { (error) in
+        db.collection(Constants.FireStoreCollections.users.rawValue).document(user.uid).setData(fields) { (error) in
             if let error = error {
                 completion(.failure(error))
                 print(error)
@@ -55,7 +49,7 @@ class FirestoreService {
         
         
         //PUT request
-        db.collection(FireStoreCollections.users.rawValue).document(userId).updateData(updateFields) { (error) in
+        db.collection(Constants.FireStoreCollections.users.rawValue).document(userId).updateData(updateFields) { (error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -66,7 +60,7 @@ class FirestoreService {
     }
     
     func getAllUsers(completion: @escaping (Result<[AppUser], Error>) -> ()) {
-        db.collection(FireStoreCollections.users.rawValue).getDocuments { (snapshot, error) in
+        db.collection(Constants.FireStoreCollections.users.rawValue).getDocuments { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -84,7 +78,7 @@ class FirestoreService {
     func createPost(post: Post, completion: @escaping (Result<(), Error>) -> ()) {
         var fields = post.fieldsDict
         fields["dateCreated"] = Date()
-        db.collection(FireStoreCollections.pictures.rawValue).addDocument(data: fields) { (error) in
+        db.collection(Constants.FireStoreCollections.pictures.rawValue).addDocument(data: fields) { (error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -94,7 +88,7 @@ class FirestoreService {
     }
     
     func getAllPosts(completion: @escaping (Result<[Post], Error>) -> ()) {
-        db.collection(FireStoreCollections.pictures.rawValue).getDocuments { (snapshot, error) in
+        db.collection(Constants.FireStoreCollections.pictures.rawValue).getDocuments { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -109,7 +103,7 @@ class FirestoreService {
     }
     
     func getPosts(forUserID: String, completion: @escaping (Result<[Post], Error>) -> ()) {
-        db.collection(FireStoreCollections.pictures.rawValue).whereField("creatorID", isEqualTo: forUserID).getDocuments { (snapshot, error) in
+        db.collection(Constants.FireStoreCollections.pictures.rawValue).whereField("creatorID", isEqualTo: forUserID).getDocuments { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -129,7 +123,7 @@ class FirestoreService {
     func createComment(comment: Comment, completion: @escaping (Result<(), Error>) -> ()) {
         var fields = comment.fieldsDict
         fields["dateCreated"] = Date()
-        db.collection(FireStoreCollections.comments.rawValue).addDocument(data: fields) { (error) in
+        db.collection(Constants.FireStoreCollections.comments.rawValue).addDocument(data: fields) { (error) in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -139,7 +133,7 @@ class FirestoreService {
     }
     
     func getComments(forPostID: String, completion: @escaping (Result<[Comment], Error>) -> ()) {
-        db.collection(FireStoreCollections.comments.rawValue).whereField("postID", isEqualTo: forPostID).getDocuments { (snapshot, error) in
+        db.collection(Constants.FireStoreCollections.comments.rawValue).whereField("postID", isEqualTo: forPostID).getDocuments { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
             } else {

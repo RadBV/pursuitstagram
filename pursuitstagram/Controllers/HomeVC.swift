@@ -17,6 +17,7 @@ class HomeVC: UIViewController {
     //MARK: - View did load
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .brown
         // Do any additional setup after loading the view.
     }
     

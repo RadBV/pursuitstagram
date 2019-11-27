@@ -13,12 +13,12 @@ import FirebaseAuth
 struct AppUser {
     let email: String?
     let uid: String
-    let userName: String?
+    let username: String?
     let dateCreated: Date?
     let photoURL: String?
     
     init(from user: User) {
-        self.userName = user.displayName
+        self.username = user.displayName
         self.email = user.email
         self.uid = user.uid
         self.dateCreated = user.metadata.creationDate
@@ -26,13 +26,13 @@ struct AppUser {
     }
     
     init?(from dict: [String: Any], id: String) {
-        guard let userName = dict["userName"] as? String,
+        guard let userName = dict["username"] as? String,
             let email = dict["email"] as? String,
             let photoURL = dict["photoURL"] as? String,
             //MARK: TODO - extend Date to convert from Timestamp?
             let dateCreated = (dict["dateCreated"] as? Timestamp)?.dateValue() else { return nil }
         
-        self.userName = userName
+        self.username = userName
         self.email = email
         self.uid = id
         self.dateCreated = dateCreated
@@ -41,7 +41,7 @@ struct AppUser {
     
     var fieldsDict: [String: Any] {
         return [
-            "userName": self.userName ?? "",
+            "username": self.username ?? "",
             "email": self.email ?? ""
         ]
     }
