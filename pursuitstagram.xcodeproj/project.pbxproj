@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D0171CF238F14D7003386BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0171CE238F14D7003386BA /* GoogleService-Info.plist */; };
+		1D0171D1238F1BE0003386BA /* homeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0171D0238F1BE0003386BA /* homeTabBar.swift */; };
+		1D0171D3238F1C6B003386BA /* CreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0171D2238F1C6B003386BA /* CreateVC.swift */; };
+		1D0171D5238F1C7E003386BA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0171D4238F1C7E003386BA /* ProfileVC.swift */; };
 		1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D0238C8C9300167D4D /* SignUpVC.swift */; };
 		1D1078D3238C8CA800167D4D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D2238C8CA800167D4D /* HomeVC.swift */; };
 		1D1078D5238D5A7C00167D4D /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1078D4238D5A7C00167D4D /* FirebaseAuthService.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		0FFC3B5162507C7D80B8529B /* Pods-pursuitstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.release.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.release.xcconfig"; sourceTree = "<group>"; };
 		1D0171CE238F14D7003386BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1D0171D0238F1BE0003386BA /* homeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTabBar.swift; sourceTree = "<group>"; };
+		1D0171D2238F1C6B003386BA /* CreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVC.swift; sourceTree = "<group>"; };
+		1D0171D4238F1C7E003386BA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		1D1078D0238C8C9300167D4D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		1D1078D2238C8CA800167D4D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		1D1078D4238D5A7C00167D4D /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
@@ -117,9 +123,8 @@
 		1D39C5E82388780500A39CCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D725B7423884AD30035DB6B /* LoginVC.swift */,
-				1D1078D0238C8C9300167D4D /* SignUpVC.swift */,
-				1D1078D2238C8CA800167D4D /* HomeVC.swift */,
+				1DD72F4F238F207900B42276 /* Auth */,
+				1DD72F50238F208500B42276 /* Regular Stuff */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		1D725B6F23884AD30035DB6B /* pursuitstagram */ = {
 			isa = PBXGroup;
 			children = (
+				1D0171D0238F1BE0003386BA /* homeTabBar.swift */,
 				1D1078DA238D647100167D4D /* Models */,
 				1D39C5E82388780500A39CCC /* Controllers */,
 				1D39C5E7238877F900A39CCC /* Views */,
@@ -164,6 +170,25 @@
 				1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */,
 			);
 			path = pursuitstagram;
+			sourceTree = "<group>";
+		};
+		1DD72F4F238F207900B42276 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1D1078D0238C8C9300167D4D /* SignUpVC.swift */,
+				1D725B7423884AD30035DB6B /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1DD72F50238F208500B42276 /* Regular Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				1D0171D4238F1C7E003386BA /* ProfileVC.swift */,
+				1D0171D2238F1C6B003386BA /* CreateVC.swift */,
+				1D1078D2238C8CA800167D4D /* HomeVC.swift */,
+			);
+			path = "Regular Stuff";
 			sourceTree = "<group>";
 		};
 		6BE6180631871A5AD5C3D536 /* Frameworks */ = {
@@ -305,11 +330,14 @@
 				1D1078D7238D5F3B00167D4D /* FirestoreService.swift in Sources */,
 				1D1078E5238D850500167D4D /* StringValidation.swift in Sources */,
 				1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */,
+				1D0171D3238F1C6B003386BA /* CreateVC.swift in Sources */,
 				1D1078D9238D5F4800167D4D /* FirebaseStorageService.swift in Sources */,
 				1D1078D3238C8CA800167D4D /* HomeVC.swift in Sources */,
 				1D1078E1238D7E6700167D4D /* Comment.swift in Sources */,
 				1D1078D1238C8C9300167D4D /* SignUpVC.swift in Sources */,
+				1D0171D1238F1BE0003386BA /* homeTabBar.swift in Sources */,
 				1D725B7323884AD30035DB6B /* SceneDelegate.swift in Sources */,
+				1D0171D5238F1C7E003386BA /* ProfileVC.swift in Sources */,
 				1DCE5090238D8D9B0053A04A /* Constants.swift in Sources */,
 				1D1078DD238D649100167D4D /* AppUsers.swift in Sources */,
 				1D1078D5238D5A7C00167D4D /* FirebaseAuthService.swift in Sources */,

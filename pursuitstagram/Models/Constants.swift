@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
     enum Storyboard: String {
         case homeVC
+        case homeTabBar
     }
     
     enum Fields: String {

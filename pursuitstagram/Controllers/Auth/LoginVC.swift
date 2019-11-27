@@ -55,8 +55,8 @@ class LoginVC: UIViewController {
                     return
             }
             
-            UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromRight, animations: {
-                window.rootViewController = HomeVC()
+            UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromBottom, animations: {
+                window.rootViewController = homeTabBar()
             }, completion: nil)
             
         case .failure(let error):

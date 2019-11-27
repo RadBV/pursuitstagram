@@ -56,7 +56,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNB-Eu-189">
                                 <rect key="frame" x="50" y="670" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -103,10 +103,62 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wVI-jM-ZXF"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="fdh-xV-EHR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNX-z4-Vcd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="114"/>
+            <point key="canvasLocation" x="3338" y="-279"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bEQ-u6-vmS">
+            <objects>
+                <viewController id="5YN-BH-Zul" customClass="CreateVC" customModule="pursuitstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4NZ-Gg-yi7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="p91-zr-Tqz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="0LU-4v-H5g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pY4-gq-KAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4200" y="189"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Ceu-f6-Psw">
+            <objects>
+                <viewController id="vSA-7P-zPE" customClass="ProfileVC" customModule="pursuitstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQC-BQ-mtI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ce5-Dl-Qh1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="FNf-gh-cWJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVo-Kr-lCD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3338" y="571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VgH-qh-gcw">
+            <objects>
+                <tabBarController storyboardIdentifier="homeTabBar" id="SiH-KI-hZh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sec-yd-1Th">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vSA-7P-zPE" kind="relationship" relationship="viewControllers" id="DUO-6r-KfA"/>
+                        <segue destination="YIr-AM-Gpo" kind="relationship" relationship="viewControllers" id="V4I-rN-CzL"/>
+                        <segue destination="5YN-BH-Zul" kind="relationship" relationship="viewControllers" id="aS5-Ti-gWe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCb-Gf-ca3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2539" y="143"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="6Z2-qE-YGq">
@@ -155,7 +207,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-Pm-hXD">
                                 <rect key="frame" x="40" y="516" width="334" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
