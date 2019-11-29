@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpVC: UIViewController {
 
@@ -25,7 +26,7 @@ class SignUpVC: UIViewController {
     //MARK: - View did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        errorLabel.alpha = 0
+        setUpStuff()
         // Do any additional setup after loading the view.
     }
     
@@ -115,6 +116,11 @@ class SignUpVC: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
         errorLabel.numberOfLines = 0
+    }
+    
+    private func setUpStuff() {
+        errorLabel.alpha = 0
+        passwordTextfield.isSecureTextEntry = true
     }
         
         

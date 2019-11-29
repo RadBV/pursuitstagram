@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class LoginVC: UIViewController {
 
@@ -22,12 +23,17 @@ class LoginVC: UIViewController {
     //MARK: - View did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpStuff()
+        
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        setUpStuff()
     }
     
     //MARK: - Functions
     @IBAction func loginPressed(_ sender: UIButton) {
+        let ref = Database.database().reference()
+        print(ref)
         let maybeData = validateFields()
         
         if maybeData.count == 1 {
@@ -100,6 +106,7 @@ class LoginVC: UIViewController {
         loginButton.isEnabled = false
         emailTextfield.delegate = self
         passwordTextfield.delegate = self
+        passwordTextfield.isSecureTextEntry = true
     }
     
 }

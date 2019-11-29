@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeVC: UIViewController {
 
@@ -14,11 +15,45 @@ class HomeVC: UIViewController {
     @IBOutlet weak var postCollectionView: UICollectionView!
     //MARK: - Properties
     
+    
     //MARK: - View did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpStuff()
     }
     
     //MARK: - Functions
+    @objc func logOutTapped(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            showAlert(with: "ERROR, COULD NOT SIGN OUT", and: "SORRY CHUMP, YOU'RE STUCK HERE: \(error.localizedDescription)")
+        }
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let sceneDelegate = windowScene.delegate as? SceneDelegate, let window = sceneDelegate.window
+            else {
+                //MARK: TODO - handle could not swap root view controller
+                return
+        }
+        UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromBottom, animations: {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            
+            window.rootViewController = loginVC
+        }, completion: nil)
+    }
+    
+    private func showAlert(with title: String, and message: String) {
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alertVC, animated: true, completion: nil)
+    }
+    
+    private func setUpStuff() {
+        view.backgroundColor = .white
+        self.navigationItem.title = "Feed"
+        let rightBtn: UIBarButtonItem = UIBarButtonItem(title: "Sign Out?", style: .plain, target: self, action: #selector(logOutTapped(_:)))
+        self.navigationItem.rightBarButtonItem = rightBtn
+    }
 }

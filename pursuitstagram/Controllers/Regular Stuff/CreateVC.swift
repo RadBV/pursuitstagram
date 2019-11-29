@@ -12,7 +12,11 @@ class CreateVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        setUpStuff()
     }
     
+    private func setUpStuff() {
+        view.backgroundColor = .white
+        self.navigationItem.title = "Create new post!"
+    }
 }

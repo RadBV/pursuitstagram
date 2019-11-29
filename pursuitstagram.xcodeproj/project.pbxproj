@@ -117,8 +117,8 @@
 		1D39C5E7238877F900A39CCC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1D95DEFD2391C2AC00E6E65D /* TabBar.storyboard */,
 				1D725B7623884AD30035DB6B /* Main.storyboard */,
+				1D95DEFF2391C4EB00E6E65D /* Tab Bar Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +173,14 @@
 				1D725B7923884AD30035DB6B /* pursuitstagram.xcdatamodeld */,
 			);
 			path = pursuitstagram;
+			sourceTree = "<group>";
+		};
+		1D95DEFF2391C4EB00E6E65D /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D95DEFD2391C2AC00E6E65D /* TabBar.storyboard */,
+			);
+			path = "Tab Bar Views";
 			sourceTree = "<group>";
 		};
 		1DD72F4F238F207900B42276 /* Auth */ = {
