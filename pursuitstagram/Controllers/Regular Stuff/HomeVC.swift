@@ -11,7 +11,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     //MARK: - IBOutlets
-    
+    @IBOutlet weak var postCollectionView: UICollectionView!
     //MARK: - Properties
     
     //MARK: - View did load

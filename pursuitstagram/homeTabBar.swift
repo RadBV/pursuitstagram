@@ -20,7 +20,7 @@ class homeTabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         homeVC.tabBarItem = UITabBarItem(title: "Posts", image: UIImage(systemName: "list.dash"), tag: 0)
-        createVC.tabBarItem = UITabBarItem(title: "Users", image: UIImage(systemName: "person.3"), tag: 1)
+        createVC.tabBarItem = UITabBarItem(title: "Create", image: UIImage(systemName: "person.3"), tag: 1)
         profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.square"), tag: 2)
         self.viewControllers = [homeVC, createVC, profileVC]
     }
