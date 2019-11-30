@@ -40,7 +40,7 @@ class HomeVC: UIViewController {
                 //MARK: TODO - handle could not swap root view controller
                 return
         }
-        UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromBottom, animations: {
+        UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromLeft, animations: {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
             
@@ -59,5 +59,20 @@ class HomeVC: UIViewController {
         self.navigationItem.title = "Feed"
         let rightBtn: UIBarButtonItem = UIBarButtonItem(title: "Sign Out?", style: .plain, target: self, action: #selector(logOutTapped(_:)))
         self.navigationItem.rightBarButtonItem = rightBtn
+    }
+}
+
+extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let post = posts[indexPath.row]
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCell", for: indexPath) as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+        }
+        return UICollectionViewCell()
     }
 }

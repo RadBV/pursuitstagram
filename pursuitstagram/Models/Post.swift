@@ -10,7 +10,7 @@ import Foundation
 import FirebaseFirestore
 
 struct Post {
-    let imageURL: String
+    let imageURL: String?
     let id: String
     let creatorID: String
     let dateCreated: Date?

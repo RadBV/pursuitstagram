@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class PostCell: UICollectionViewCell {
     
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var postPhoto: UIImageView!
     
+    func configureCell(post: Post) {
+        
+    }
 }
+
