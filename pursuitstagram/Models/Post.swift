@@ -10,28 +10,24 @@ import Foundation
 import FirebaseFirestore
 
 struct Post {
-    let title: String
-    let body: String
+    let imageURL: String
     let id: String
     let creatorID: String
     let dateCreated: Date?
     
-    init(title: String, body: String, creatorID: String, dateCreated: Date? = nil) {
-        self.title = title
-        self.body = body
+    init(imageURL: String, body: String, creatorID: String, dateCreated: Date? = nil) {
+        self.imageURL = imageURL
         self.creatorID = creatorID
         self.id = UUID().description
         self.dateCreated = dateCreated
     }
     
     init?(from dict: [String: Any], id: String) {
-        guard let title = dict["title"] as? String,
-            let body = dict["body"] as? String,
+        guard let imageURL = dict["imageURL"] as? String,
             let userID = dict["creatorID"] as? String,
             let dateCreated = (dict["dateCreated"] as? Timestamp)?.dateValue() else { return nil }
         
-        self.title = title
-        self.body = body
+        self.imageURL = imageURL
         self.creatorID = userID
         self.id = id
         self.dateCreated = dateCreated
@@ -39,8 +35,7 @@ struct Post {
     
     var fieldsDict: [String: Any] {
         return [
-            "title": self.title,
-            "body": self.body,
+            "imageURL": self.imageURL,
             "creatorID": self.creatorID
         ]
     }

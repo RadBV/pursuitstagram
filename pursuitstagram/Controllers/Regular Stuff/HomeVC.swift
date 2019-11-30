@@ -14,7 +14,11 @@ class HomeVC: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var postCollectionView: UICollectionView!
     //MARK: - Properties
-    
+    var posts = [Post]() {
+        didSet {
+            self.postCollectionView.reloadData()
+        }
+    }
     
     //MARK: - View did load
     override func viewDidLoad() {

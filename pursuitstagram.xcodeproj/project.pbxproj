@@ -29,6 +29,7 @@
 		1D725B8023884ADE0035DB6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D725B7E23884ADE0035DB6B /* LaunchScreen.storyboard */; };
 		1D95DEFE2391C2AC00E6E65D /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D95DEFD2391C2AC00E6E65D /* TabBar.storyboard */; };
 		1DCE5090238D8D9B0053A04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE508F238D8D9B0053A04A /* Constants.swift */; };
+		1DEEE2A02391EAF600BD336E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEEE29F2391EAF600BD336E /* PostCell.swift */; };
 		3150E6435D957E7C986F66E8 /* Pods_pursuitstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		1D725B8123884ADE0035DB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D95DEFD2391C2AC00E6E65D /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		1DCE508F238D8D9B0053A04A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DEEE29F2391EAF600BD336E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		3E1CB488083DE9AEA28F3C9F /* Pods-pursuitstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pursuitstagram.debug.xcconfig"; path = "Target Support Files/Pods-pursuitstagram/Pods-pursuitstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F7C6A8964DA6EF69E3F729 /* Pods_pursuitstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pursuitstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,8 +119,8 @@
 		1D39C5E7238877F900A39CCC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1D725B7623884AD30035DB6B /* Main.storyboard */,
-				1D95DEFF2391C4EB00E6E65D /* Tab Bar Views */,
+				1DEEE29E2391EACC00BD336E /* Cells */,
+				1D95DEFF2391C4EB00E6E65D /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,12 +177,13 @@
 			path = pursuitstagram;
 			sourceTree = "<group>";
 		};
-		1D95DEFF2391C4EB00E6E65D /* Tab Bar Views */ = {
+		1D95DEFF2391C4EB00E6E65D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1D725B7623884AD30035DB6B /* Main.storyboard */,
 				1D95DEFD2391C2AC00E6E65D /* TabBar.storyboard */,
 			);
-			path = "Tab Bar Views";
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		1DD72F4F238F207900B42276 /* Auth */ = {
@@ -200,6 +203,14 @@
 				1D1078D2238C8CA800167D4D /* HomeVC.swift */,
 			);
 			path = "Regular Stuff";
+			sourceTree = "<group>";
+		};
+		1DEEE29E2391EACC00BD336E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DEEE29F2391EAF600BD336E /* PostCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6BE6180631871A5AD5C3D536 /* Frameworks */ = {
@@ -341,6 +352,7 @@
 				1D725B7123884AD30035DB6B /* AppDelegate.swift in Sources */,
 				1D1078D7238D5F3B00167D4D /* FirestoreService.swift in Sources */,
 				1D1078E5238D850500167D4D /* StringValidation.swift in Sources */,
+				1DEEE2A02391EAF600BD336E /* PostCell.swift in Sources */,
 				1D725B7B23884AD30035DB6B /* pursuitstagram.xcdatamodeld in Sources */,
 				1D0171D3238F1C6B003386BA /* CreateVC.swift in Sources */,
 				1D1078D9238D5F4800167D4D /* FirebaseStorageService.swift in Sources */,
